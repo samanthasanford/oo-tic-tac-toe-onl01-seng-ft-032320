@@ -115,9 +115,10 @@ def winner?
   index = won?
   if index == false
     return nil
-  elsif @board[index[0]] == "X"
+  else
+    if @board[index[0]] == "X"
       return "X"
-    elsif
+    else
       return "O"
     end
   end
