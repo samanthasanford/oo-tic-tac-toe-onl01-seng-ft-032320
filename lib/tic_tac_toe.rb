@@ -2,7 +2,7 @@
 class TicTacToe
 
  WIN_COMBINATIONS = [
-   
+
    [0, 1, 2],
    [3, 4, 5],
    [6, 7, 8],
@@ -12,7 +12,7 @@ class TicTacToe
    [0, 4, 8],
    [6, 4, 2]
  ]
- 
+
 def initialize
  @board = Array.new(9, " ")
 end
@@ -66,7 +66,7 @@ def turn
 
  user_input = gets.chomp
  index = input_to_index(user_input)
- 
+
  if valid_move?(index)
    player_token = current_player
    move(index, player_token)
@@ -141,4 +141,4 @@ def play
  end
 end
 
-end 
+end
