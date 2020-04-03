@@ -120,6 +120,7 @@ def winner?
     elsif
       return "O"
     end
+  end
 end
 
 end # Class closing tag
