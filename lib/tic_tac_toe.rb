@@ -111,16 +111,10 @@ def over?
 end
 
 def winner?
-  index = []
-  index = won?
-  if index == false
-    return nil
+  if won?
+    @board[won?[0]]
   else
-    if @board[index[0]] == "X"
-      puts "X"
-    else
-      puts "O"
-    end
+    nil
   end
 end
 
