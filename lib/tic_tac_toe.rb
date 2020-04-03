@@ -125,13 +125,16 @@ def winner?
 end
 
 def play
-  until over? == true
+  puts "Welcome to TicTacToe!"
+  display_board
+
+  until over? do
     turn
   end
 
   if won?
     puts "Congratulations #{winner}!"
-  elsif draw?
+  else draw?
     puts "Cat's Game!"
   end
 end
